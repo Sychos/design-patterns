@@ -24,8 +24,8 @@ public class CharacterTest
         character.performUserWeapon();
     }
 
-
-    //output:
+    //King fight
     //use knife to kill
+    //King fight
     //use sword to kill
 }
