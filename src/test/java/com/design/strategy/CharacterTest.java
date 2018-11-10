@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 
 /**
  * @Author:Madg
- * @Date:2018/11/10/010 21:40
+ * @Date:2018/11/10/010 21:56
  */
 public class CharacterTest
 {
@@ -31,5 +31,4 @@ public class CharacterTest
     //output:
     //use knife to kill
     //use sword to kill
-
 }
