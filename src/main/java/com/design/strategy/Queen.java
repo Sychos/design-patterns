@@ -6,6 +6,12 @@ package com.design.strategy;
  */
 public class Queen extends Character
 {
+    //王后默认用剑砍杀
+    public Queen()
+    {
+        weaponBehavior=new SwordBehavior();
+    }
+
     @Override
     void fight()
     {

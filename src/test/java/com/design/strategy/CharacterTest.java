@@ -13,17 +13,14 @@ public class CharacterTest
     @Test
     public void test()
     {
-        //选择一个角色King
+        //1.选择一个角色King
         Character character=new King();
-        //选择一种武器Knife
-        character.setWeaponBehavior(new KnifeBehavior());
-
-        //使用
+        //2.使用：默认匕首刺杀
         character.performUserWeapon();
 
-        //更换武器为Sword
+        //3.更换武器为Sword
         character.setWeaponBehavior(new SwordBehavior());
-        //使用
+        //4.使用
         character.performUserWeapon();
     }
 

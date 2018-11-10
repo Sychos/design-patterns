@@ -17,6 +17,7 @@ public abstract class Character
 
     public final void performUserWeapon()
     {
+        fight();
         weaponBehavior.useWeapon();
     }
 }
