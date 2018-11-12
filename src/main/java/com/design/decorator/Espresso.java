@@ -3,11 +3,11 @@ package com.design.decorator;
 /**
  * @Author:Madg
  * @Date:2018/11/11/011 23:04
- * 第一种具体被装饰者：浓缩咖啡
+ * 绗竴绉嶅叿浣撹瑁呴グ鑰咃細娴撶缉鍜栧暋
  */
 public class Espresso extends Beverage
 {
-    //为保证区分名字，此处在构造方法中更新介绍
+    //涓轰繚璇佸尯鍒嗗悕瀛楋紝姝ゅ鍦ㄦ瀯閫犳柟娉曚腑鏇存柊浠嬬粛
     public Espresso()
     {
         description="Espresso";

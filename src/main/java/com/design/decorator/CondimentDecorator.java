@@ -3,13 +3,13 @@ package com.design.decorator;
 /**
  * @Author:Madg
  * @Date:2018/11/11/011 22:57
- * 抽象装饰器，为保证装饰类型，继承自统一组建Component
- * 此处的装饰器为调味品
+ * 鎶借薄瑁呴グ鍣紝涓轰繚璇佽楗扮被鍨嬶紝缁ф壙鑷粺涓�缁勫缓Component
+ * 姝ゅ鐨勮楗板櫒涓鸿皟鍛冲搧
  *
- * 在装饰者模式中，此类的名字可以统一写成 [Decorator]
+ * 鍦ㄨ楗拌�呮ā寮忎腑锛屾绫荤殑鍚嶅瓧鍙互缁熶竴鍐欐垚 [Decorator]
  */
 public abstract class CondimentDecorator extends Beverage
 {
-    //因为每个调味品的介绍是必须的，所以此处需要修改下，使得每个具体的装饰器必须修改其介绍
+    //鍥犱负姣忎釜璋冨懗鍝佺殑浠嬬粛鏄繀椤荤殑锛屾墍浠ユ澶勯渶瑕佷慨鏀逛笅锛屼娇寰楁瘡涓叿浣撶殑瑁呴グ鍣ㄥ繀椤讳慨鏀瑰叾浠嬬粛
     abstract protected String getDecription();
 }

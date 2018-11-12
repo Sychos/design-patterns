@@ -13,23 +13,23 @@ public class WeatherDataTest
     @Test
     public void test()
     {
-        //³õÊ¼»¯
+        //åˆå§‹åŒ–
         Subject subject=new WeatherData();
 
-        //×¢²áµÚÒ»¸ö¹Û²ìÕß
+        //æ³¨å†Œç¬¬ä¸€ä¸ªè§‚å¯Ÿè€…
         Observer observer=new CurrentConditionDisplay(subject);
-        //×¢²áµÚ¶ş¸ö¹Û²ìÕß
+        //æ³¨å†Œç¬¬äºŒä¸ªè§‚å¯Ÿè€…
         Observer observer2=new StatisticDisplay(subject);
 
-        //µÚÒ»´Î·¢²¼¸üĞÂ
+        //ç¬¬ä¸€æ¬¡å‘å¸ƒæ›´æ–°
         ((WeatherData) subject).setData(11.2f,12.3f,11.2f);
 
-        //µÚ¶ş´Î·¢²¼¸üĞÂ
+        //ç¬¬äºŒæ¬¡å‘å¸ƒæ›´æ–°
         ((WeatherData) subject).setData(22.2f,32.3f,33.2f);
 
-        //Current conditions: 11.2¡æ and 12.3humdity
-        //Statistic Datas: 11.2¡æ and 12.3humdity and 11.2
-        //Current conditions: 22.2¡æ and 32.3humdity
-        //Statistic Datas: 22.2¡æ and 32.3humdity and 33.2
+        //Current conditions: 11.2â„ƒ and 12.3humdity
+        //Statistic Datas: 11.2â„ƒ and 12.3humdity and 11.2
+        //Current conditions: 22.2â„ƒ and 32.3humdity
+        //Statistic Datas: 22.2â„ƒ and 32.3humdity and 33.2
     }
 }

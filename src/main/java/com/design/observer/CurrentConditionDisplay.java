@@ -14,7 +14,7 @@ public class CurrentConditionDisplay implements Observer,Displayable
     public CurrentConditionDisplay(Subject subject)
     {
         this.subject = subject;
-        //³õÊ¼»¯Ê±¾Í×¢²á½øÈ¥
+        //åˆå§‹åŒ–æ—¶å°±æ³¨å†Œè¿›å»
         subject.addObserver(this);
     }
 
@@ -30,6 +30,6 @@ public class CurrentConditionDisplay implements Observer,Displayable
     @Override
     public void display()
     {
-        System.out.println("Current conditions: "+tempprature+"¡æ and "+humdity+"humdity");
+        System.out.println("Current conditions: "+tempprature+"â„ƒ and "+humdity+"humdity");
     }
 }

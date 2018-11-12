@@ -12,15 +12,15 @@ public class DecoratorTest
     @Test
     public void test()
     {
-        //¶¨ÒåÒ»¸öÒûÁÏ
+        //å®šä¹‰ä¸€ä¸ªé¥®æ–™
         Beverage beverage=new HoseBlend();
         System.out.println(beverage.getDescription()+"$"+beverage.getCost());
 
-        //¼ÓÄÌ
+        //åŠ å¥¶
         beverage=new Milk(beverage);
         System.out.println(beverage.getDescription()+"$"+beverage.getCost());
 
-        //Ä¦¿¨
+        //æ‘©å¡
         beverage=new Mocha(beverage);
 
         System.out.println(beverage.getDescription()+" $"+beverage.getCost());

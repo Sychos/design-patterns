@@ -3,22 +3,23 @@ package com.design.decorator;
 /**
  * @Author:Madg
  * @Date:2018/11/11/011 23:10
- * µÚÒ»ÖÖµ÷Î¶Æ·£ºÄ¦¿¨
+ * ç¬¬ä¸€ç§è°ƒå‘³å“ï¼šæ‘©å¡
  */
 public class Mocha extends CondimentDecorator
 {
-    //ÓÃÓÚ±»×°ÊÎµÄÊµÀı
+    //ç”¨äºè¢«è£…é¥°çš„å®ä¾‹
     private Beverage beverage;
 
     public Mocha(Beverage beverage)
     {
         this.beverage = beverage;
+        this.description=beverage.getDescription()+"ï¼ŒMocha";
     }
 
     @Override
     protected String getDecription()
     {
-        return this.beverage.getDescription()+",Mocha";
+        return description;
     }
 
     @Override

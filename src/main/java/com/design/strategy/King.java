@@ -6,7 +6,7 @@ package com.design.strategy;
  */
 public class King extends Character
 {
-    //国王默认用匕首刺杀
+    //鍥界帇榛樿鐢ㄥ寱棣栧埡鏉�
     public King()
     {
         weaponBehavior=new KnifeBehavior();

@@ -3,11 +3,11 @@ package com.design.decorator;
 /**
  * @Author:Madg
  * @Date:2018/11/11/011 23:04
- * 第二种具体被装饰者：综合咖啡
+ * 绗簩绉嶅叿浣撹瑁呴グ鑰咃細缁煎悎鍜栧暋
  */
 public class HoseBlend extends Beverage
 {
-    //为保证区分名字，此处在构造方法中更新介绍
+    //涓轰繚璇佸尯鍒嗗悕瀛楋紝姝ゅ鍦ㄦ瀯閫犳柟娉曚腑鏇存柊浠嬬粛
     public HoseBlend()
     {
         description="House Blend coffee";

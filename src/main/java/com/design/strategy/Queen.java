@@ -6,7 +6,7 @@ package com.design.strategy;
  */
 public class Queen extends Character
 {
-    //王后默认用剑砍杀
+    //鐜嬪悗榛樿鐢ㄥ墤鐮嶆潃
     public Queen()
     {
         weaponBehavior=new SwordBehavior();

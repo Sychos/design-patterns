@@ -7,10 +7,10 @@ package com.design.observer;
 public interface Observer
 {
     /**
-     * ĞèÒª¸üĞÂµÄÊı¾İ£¨´Ë´¦µÄÊı¾İÆäÊµ¿ÉÒÔ·â×°³ÉÒ»¸öÀà£©
-     * @param temp ÎÂ¶È
-     * @param humdity Êª¶È
-     * @param pressure ÆøÑ¹
+     * éœ€è¦æ›´æ–°çš„æ•°æ®ï¼ˆæ­¤å¤„çš„æ•°æ®å…¶å®å¯ä»¥å°è£…æˆä¸€ä¸ªç±»ï¼‰
+     * @param temp æ¸©åº¦
+     * @param humdity æ¹¿åº¦
+     * @param pressure æ°”å‹
      */
     void update(float temp,float humdity,float pressure);
 }

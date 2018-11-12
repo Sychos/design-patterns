@@ -3,23 +3,23 @@ package com.design.decorator;
 /**
  * @Author:Madg
  * @Date:2018/11/11/011 23:10
- * µÚ¶şÖÖµ÷Î¶Æ·£ºÕôÄÌ
+ * ç¬¬äºŒç§è°ƒå‘³å“ï¼šè’¸å¥¶
  */
 public class Milk extends CondimentDecorator
 {
-    //ÓÃÓÚ±»×°ÊÎµÄÊµÀı
+    //ç”¨äºè¢«è£…é¥°çš„å®ä¾‹
     private Beverage beverage;
 
     public Milk(Beverage beverage)
     {
         this.beverage = beverage;
-
+        this.description=beverage.getDescription()+",Milk";
     }
 
     @Override
     public String getDecription()
     {
-        return beverage.getDescription()+",Milk";
+        return description;
     }
 
     @Override

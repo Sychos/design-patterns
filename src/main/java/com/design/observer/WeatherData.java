@@ -44,13 +44,13 @@ public class WeatherData implements Subject
         }
     }
 
-    //模拟数据变化
+    //妯℃嫙鏁版嵁鍙樺寲
     public void setData(float temprature,float humdity,float pressure)
     {
         this.temprature=temprature;
         this.humdity=humdity;
         this.pressure=pressure;
-        //发布更新
+        //鍙戝竷鏇存柊
         notifyObservers();
     }
 }

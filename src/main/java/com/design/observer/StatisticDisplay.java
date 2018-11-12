@@ -15,7 +15,7 @@ public class StatisticDisplay implements Observer,Displayable
     public StatisticDisplay(Subject subject)
     {
         this.subject = subject;
-        //³õÊ¼»¯Ê±¾Í×¢²á½øÈ¥
+        //åˆå§‹åŒ–æ—¶å°±æ³¨å†Œè¿›å»
         subject.addObserver(this);
     }
 
@@ -32,6 +32,6 @@ public class StatisticDisplay implements Observer,Displayable
     @Override
     public void display()
     {
-        System.out.println("Statistic Datas: "+tempprature+"¡æ and "+humdity+"humdity and "+pressure);
+        System.out.println("Statistic Datas: "+tempprature+"â„ƒ and "+humdity+"humdity and "+pressure);
     }
 }
