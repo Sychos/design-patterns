@@ -19,7 +19,7 @@ public class SwanAdaptorTest
         uglyDuck.quck();
         uglyDuck.fly();
         //变天鹅
-        SwanAdaptor adaptor=new SwanAdaptor(uglyDuck);
+        Swan adaptor=new SwanAdaptor(uglyDuck);
         adaptor.cluck();
         adaptor.fly();
     }
