@@ -1,4 +1,4 @@
-package com.design.adaptor;
+package com.design.adapter;
 
 import org.junit.Test;
 
@@ -6,8 +6,6 @@ import java.util.Arrays;
 import java.util.Enumeration;
 import java.util.Iterator;
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 /**
  * @Author:Madg
@@ -21,7 +19,7 @@ public class IteratorAdaptorTest
         List<String> list= Arrays.asList("a","b","c");
 
         Iterator<String> iterator=list.iterator();
-        Enumeration<String> enu=new IteratorAdaptor<>(iterator);
+        Enumeration<String> enu=new IteratorAdapter<>(iterator);
 
         while (enu.hasMoreElements())
         {

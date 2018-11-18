@@ -1,15 +1,13 @@
-package com.design.adaptor;
+package com.design.adapter;
 
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * @Author:Madg
  * @Date:2018/11/17/017 20:20
  * 模拟丑小鸭变黑天鹅
  */
-public class SwanAdaptorTest
+public class SwanAdapterTest
 {
     @Test
     public void test()
@@ -19,7 +17,7 @@ public class SwanAdaptorTest
         uglyDuck.quck();
         uglyDuck.fly();
         //变天鹅
-        Swan adaptor=new SwanAdaptor(uglyDuck);
+        Swan adaptor=new SwanAdapter(uglyDuck);
         adaptor.cluck();
         adaptor.fly();
     }

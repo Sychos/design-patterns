@@ -1,4 +1,4 @@
-package com.design.adaptor;
+package com.design.adapter;
 
 /**
  * @Author:Madg

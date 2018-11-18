@@ -1,4 +1,4 @@
-package com.design.adaptor;
+package com.design.adapter;
 
 import java.util.*;
 
@@ -7,11 +7,11 @@ import java.util.*;
  * @Date:2018/11/17/017 22:03
  * 这是个将Iterator转换成Enumeration的适配器
  */
-public class IteratorAdaptor<E> implements Enumeration<E>
+public class IteratorAdapter<E> implements Enumeration<E>
 {
     private Iterator<E> iterator;
 
-    public IteratorAdaptor(Iterator<E> iterator)
+    public IteratorAdapter(Iterator<E> iterator)
     {
         this.iterator = iterator;
     }

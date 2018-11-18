@@ -1,15 +1,15 @@
-package com.design.adaptor;
+package com.design.adapter;
 
 /**
  * @Author:Madg
  * @Date:2018/11/17/017 20:15
  * 将鸭子变成天鹅的适配器
  */
-public class SwanAdaptor implements Swan
+public class SwanAdapter implements Swan
 {
     Duck duck;
 
-    public SwanAdaptor(Duck duck)
+    public SwanAdapter(Duck duck)
     {
         this.duck = duck;
     }
