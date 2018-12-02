@@ -22,3 +22,15 @@
 <p>本次模式将模拟继续上一个故事，老板需要在晚餐的菜单项中新加甜点菜单，这个把服务员急坏了，因为她在前一项中的迭代器将会失效。</p>
 <h1>状态模式</h1>
 <p>在状态模式中，我们创建表示各种状态的对象和一个行为随着状态对象改变而改变的 context 对象。</p>
+<h1>代理模式</h1>
+<p>在代理模式中，我们用客户端调用远程的对象的方法，就像在本地调用本地方法一样。起作用的是远程对象，但是客户端看到的就像是他在调用本地对象</p>
+<h2>操作步骤为</h2>
+<ol>
+ <li>先编译包下的每个java类，如：javac -d . MyRemote.java、javac -d . MyRemoteImpl.java、javac -d . RemoteClient.java
+ <hr />
+ 此时会在proxy文件中生成包com.design.proxy。然后会在里面生成每个类对应的class
+ </li>
+ <li>执行完上面步骤后再执行rmic com.design.proxy.MyRemoteImpl，此时会在com.design.proxy下生成一个MyRemoteImpl_Stub.class的文件</li>
+ <li>然后在别的命令行下执行jdk自带的程序rmiregistry，此时远程执行的服务就已经注册到了本地的rmic服务中。</li>
+ <li>然后执行java com.design.proxy.RemoteClient。此时就会看到在RemoteClient中执行了远程的对象的方法，打印了Hello, I'm Remote server，也就意味着RemoteClient中的Remote代理远程的MyRemoteImpl完成了其方法SayHello的调用.</li>
+</ol>
